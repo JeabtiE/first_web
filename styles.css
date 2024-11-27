@@ -402,6 +402,39 @@ body {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+.contact_button3 {
+    background-color: #fff;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    /* จัดตำแหน่งเริ่มต้นจากซ้าย */
+    gap: 10px;
+    /* ระยะห่างระหว่าง <p> และปุ่ม */
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 20px rgba(58, 58, 58, 0.3);
+}
+
+.contact_button3 img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact_button3 p {
+    font-size: 1rem;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.contact_button3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
 
 
 /* สำหรับคอนเทนเนอร์ของปุ่ม */
