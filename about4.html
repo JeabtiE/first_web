@@ -71,7 +71,24 @@
         </div>
     </div>
 
-
+    <script>
+        // เลือกองค์ประกอบทั้งหมดที่อยู่ใน class "icon-section"
+        const icons = document.querySelectorAll('.icon-section img');
+    
+        icons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                // ถ้าเพิ่ม class "active" ให้ขยายรูป
+                if (icon.classList.contains('active')) {
+                    icon.classList.remove('active');
+                } else {
+                    // ลบ "active" จากไอคอนอื่น
+                    icons.forEach(i => i.classList.remove('active'));
+                    // เพิ่ม "active" ให้ไอคอนที่ถูกแตะ
+                    icon.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
