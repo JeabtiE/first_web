@@ -208,6 +208,9 @@ body {
         display: inline-block;
         /* ยังคงแสดงผลใน responsive */
     }
+    .home-button:hover {
+        display: inline-block;
+    }
 
     .home-button:active {
         transform: scale(0.95);
