@@ -250,6 +250,14 @@ body {
     /* ขยายรูปภาพเมื่อเมาส์วาง */
 }
 
+.icon-section img.active {
+    transform: scale(1.5);
+}
+
+.icon-section img:not(.active) {
+    transform: scale(1);
+}
+
 
 .title {
     text-align: center;
