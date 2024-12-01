@@ -296,7 +296,25 @@ body {
     margin-bottom: 10px;
     white-space: nowrap;
     text-align: center;
+    background: linear-gradient(45deg, #f8ca52, #f4bb3a, #ff3131, #fc0d2a);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 2px 2px 5px #ff906e;
+    animation: gradient-move 4s infinite linear;
 }
+
+@keyframes gradient-move {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: -100% 50%;
+    }
+}
+
 
 .text p {
     font-size: 1.2rem;
@@ -551,6 +569,7 @@ footer {
     background: #343a40;
     padding-top: 0px;
 }
+
 .context {
     justify-content: center;
     align-items: center;
@@ -564,34 +583,36 @@ footer {
     font-style: normal;
     letter-spacing: 0.1cap;
 }
+
 .image-gallery {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
+    flex-wrap: wrap;
+    gap: 20px;
     padding-right: 40px;
-    position: absolute; 
+    position: absolute;
     right: 45px;
     margin-top: -50px;
 }
 
 .gallery-img {
-    width: 50px; 
-    height: auto; 
-    border-radius: 50px; 
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 100%; 
+    max-width: 100%;
 }
+
 .gallery-img:hover {
-    background: #343a40; 
-    box-shadow: 0px 6px 20px #f4f4f4; 
+    background: #343a40;
+    box-shadow: 0px 6px 20px #f4f4f4;
     backdrop-filter: blur(10px);
     color: #333;
-    transform: translateY(-2px); 
+    transform: translateY(-2px);
 }
 
 /* Home Button Active State (Click) */
 .gallery-img:active {
-    transform: scale(0.95); 
+    transform: scale(0.95);
 }
 
 /* Responsive styling for smaller screens */
@@ -599,16 +620,19 @@ footer {
     #contact {
         display: flex;
     }
+
     .gallery-img {
         max-width: 80%;
-        height: auto; 
+        height: auto;
     }
-    .context{
+
+    .context {
         display: none;
     }
 }
+
 @media (max-width: 400px) {
-    .gallery-img{
+    .gallery-img {
         display: none;
     }
 }
@@ -626,6 +650,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 /* Typography Responsiveness */
 @media screen and (max-width: 600px) {
     body {
