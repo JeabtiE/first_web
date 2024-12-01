@@ -208,6 +208,7 @@ body {
         display: inline-block;
         /* ยังคงแสดงผลใน responsive */
     }
+
     .home-button:hover {
         display: inline-block;
     }
@@ -228,6 +229,9 @@ body {
     padding: 80px;
     color: #333;
     align-items: center;
+    margin-top: 100px;
+    /* เพิ่มระยะห่างจากขอบบน */
+    margin-bottom: 300px;
 }
 
 .icon-section {
@@ -253,20 +257,39 @@ body {
     /* ขยายรูปภาพเมื่อเมาส์วาง */
 }
 
-.icon-section img.active {
-    transform: scale(1.5);
-}
-
 .icon-section img:not(.active) {
     transform: scale(1);
 }
 
+.title1 {
+    text-align: center;
+    font-size: 32px;
+    background: linear-gradient(45deg, #C0C0C0, #D9D9D9, #ffffff, #A8A8A8);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 2px 2px 5px rgba(192, 192, 192, 0.7);
+    animation: gradient-move 4s infinite linear;
+}
 
-.title {
+@keyframes gradient-move {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: -100% 50%;
+    }
+}
+
+.title2 {
     text-align: center;
     font-size: 24px;
-    color: #5e2b82;
+    color: #1fa2ff;
     margin-bottom: 20px;
+    font-family: "Quicksand", sans-serif;
 }
 
 .details {
@@ -276,13 +299,24 @@ body {
 .details p {
     margin: 5px 0;
     font-size: 16px;
-    color: #5e2b82;
+    color: #2e2e2e;
+    font-family: "Quicksand", sans-serif;
 }
 
 .description p {
     font-size: 14px;
     line-height: 1.6;
     color: #555;
+    font-family: "Quicksand", sans-serif;
+    gap: 10px;
+}
+
+.description li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    font-family: "Quicksand", sans-serif;
+    gap: 10px;
 }
 
 /* Loading Screen */
