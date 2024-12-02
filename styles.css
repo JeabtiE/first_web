@@ -694,3 +694,13 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+footer p:nth-of-type(1) {
+    font-size: 14px;
+    color: #2e2e2e;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 10px;
+}
